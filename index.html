@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+<script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-white ">
+    <div class="sticky backdrop-blur-3xl bg-yellow-200">
+        <nav class="flex justify-around p-5 backdrop:blur-2xl" >
+            <button class="btn btn-secondary">Blog</button>
+            <div class="flex gap-3 items-center">
+                <div><img src="./assets/logo.png" alt=""></div>
+               <div> <p class="text-red-800 font-extrabold text-end">TOTON</p></div>
+            </div>
+            <div class="flex gap-3 items-center">
+                <div><img src="./assets/coin.png" alt=""></div>
+                <div><p class=""><span class="text-green-600 font-bold" id="old-donate">5500</span>   BDT</p></div>
+            </div>
+        </nav>
+    </div>
+    <main class="m-4">
+        <div class="flex gap-9 justify-center">
+            <button class="btn btn-secondary hover:bg-green-400 ">Donation</button>
+            <button class="btn btn-secondary hover:bg-green-400">History</button>
+        </div>
+        <div class="divider mt-3"></div>
+        
+        
+        
+        <section class="flex md:justify-center gap-9 flex-col md:flex-row items-center md:mx-11 drop-shadow-2xl bg-gray-200 p-4 rounded-xl">
+            <div>
+                <img src="./assets/noakhali.png" alt="">
+            </div>
+            <div>
+                <div class="bg-gray-400 pr-3 pl-3  py-3 w-1/3 rounded-2xl flex items-center gap-3">
+                    <img src="./assets/coin.png" alt="">
+                    <p class="text-red-800" id="donaded">101 <span>  BDT</span></p>
+                </div>
+                <h2 class="mt-5 text-3xl">
+                    Donate for Flood at Noakhali, Bangladesh
+                </h2>
+                <p class="mt-5 mb-5">
+                    In this recent time, flood has occourd in various places in bangladesh. Noakhali is one of these places. And now Noakhali needs our help. So donate for humanity.
+                </p>
+                <div class="flex flex-col gap-4 items-center mb-5">
+                    <input type="text" placeholder="Write Donation Ammount" class="input bg-white w-full" id="dnt-input"/>
+                    <button class="btn btn-secondary hover:bg-green-400 w-1/3 Donate-btn" id="donateBtn">Donate Now</button>
+                </div>
+            </div>
+        </section>
+        <!-- card 2................... -->
+        <section class="flex md:justify-center gap-9 flex-col md:flex-row items-center md:mx-11 drop-shadow-2xl bg-gray-200 p-4 rounded-xl">
+            <div>
+                <img src="./assets/feni.png" alt="">
+            </div>
+            <div>
+                <div class="bg-gray-400 pr-3 pl-3  py-3 w-1/3 rounded-2xl flex items-center gap-3">
+                    <img src="./assets/coin.png" alt="">
+                    <p class="text-red-800" id="donaded5">101 <span>  BDT</span></p>
+                </div>
+                <h2 class="mt-5 text-3xl">
+                    Donate for Flood at feni, Bangladesh
+                </h2>
+                <p class="mt-5 mb-5">
+                    In this recent time, flood has occourd in various places in bangladesh. feni is one of these places. And now feni needs our help. So donate for humanity.
+                </p>
+                <div class="flex flex-col gap-4 items-center mb-5">
+                    <input type="text" placeholder="Write Donation Ammount" class="input bg-white w-full" id="dnt-input5"/>
+                    <button class="btn btn-secondary hover:bg-green-400 w-1/3 Donate-btn" id="donateBtn5">Donate Now</button>
+                </div>
+            </div>
+        </section>
+        <!-- card 3          ............. -->
+        <section class="flex md:justify-center gap-9 flex-col md:flex-row items-center md:mx-11 drop-shadow-2xl bg-gray-200 p-4 rounded-xl">
+            <div>
+                <img src="./assets/noakhali.png" alt="">
+            </div>
+            <div>
+                <div class="bg-gray-400 pr-3 pl-3  py-3 w-1/3 rounded-2xl flex items-center gap-3">
+                    <img src="./assets/coin.png" alt="">
+                    <p class="text-red-800" id="donaded8">101 <span>  BDT</span></p>
+                </div>
+                <h2 class="mt-5 text-3xl">
+                    Donate for Flood at Noakhali, Bangladesh
+                </h2>
+                <p class="mt-5 mb-5">
+                    In this recent time, flood has occourd in various places in bangladesh. Noakhali is one of these places. And now Noakhali needs our help. So donate for humanity.
+                </p>
+                <div class="flex flex-col gap-4 items-center mb-5">
+                    <input type="text" placeholder="Write Donation Ammount" class="input bg-white w-full" id="dnt-input8"/>
+                    <button class="btn btn-secondary hover:bg-green-400 w-1/3 Donate-btn" id="donateBtn8">Donate Now</button>
+                </div>
+            </div>
+        </section>
+        <div class="relative z-10 hidden" aria-labelledby="modal-title" role="dialog" aria-modal="true" id="mod" >
+            <div class="fixed inset-0 bg-gray-500 bg-opacity-75 transition-opacity" aria-hidden="true"></div>
+          
+            <div class="fixed inset-0 z-10 w-screen overflow-y-auto">
+              <div class="flex min-h-full items-end justify-center p-4 text-center sm:items-center sm:p-0">
+                <div class="relative transform overflow-hidden rounded-lg bg-white text-left shadow-xl transition-all sm:my-8 sm:w-full sm:max-w-lg">
+                  <div class="bg-white px-4 pb-4 pt-5 sm:p-6 sm:pb-4">
+                    <div class="sm:flex sm:items-start">
+                      <div class="mx-auto flex h-12 w-12 flex-shrink-0 items-center justify-center rounded-full bg-red-100 sm:mx-0 sm:h-10 sm:w-10">
+                        <svg class="h-6 w-6 text-red-600" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
+                          <path stroke-linecap="round" stroke-linejoin="round" d="M12 9v3.75m-9.303 3.376c-.866 1.5.217 3.374 1.948 3.374h14.71c1.73 0 2.813-1.874 1.948-3.374L13.949 3.378c-.866-1.5-3.032-1.5-3.898 0L2.697 16.126zM12 15.75h.007v.008H12v-.008z" />
+                        </svg>
+                      </div>
+                      <div class="mt-3 text-center sm:ml-4 sm:mt-0 sm:text-left">
+                        <h3 class="text-base font-semibold leading-6 text-gray-900" id="modal-title">Donation Failed</h3>
+                        <div class="mt-2">
+                          <p class="text-sm text-gray-500">Your Donating ammount is not correct.</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="bg-gray-50 px-4 py-3 sm:flex sm:flex-row-reverse sm:px-6">
+                    <button type="button" class="mt-3 inline-flex w-full justify-center rounded-md bg-white px-3 py-2 text-sm font-semibold text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 hover:bg-gray-50 sm:mt-0 sm:w-auto" id="try-agn">Try again</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+
+
+        <div class="relative z-10 hidden" aria-labelledby="modal-title" role="dialog" aria-modal="true" id="mod1" >
+            <div class="fixed inset-0 bg-gray-500 bg-opacity-75 transition-opacity" aria-hidden="true"></div>
+          
+            <div class="fixed inset-0 z-10 w-screen overflow-y-auto">
+              <div class="flex min-h-full items-end justify-center p-4 text-center sm:items-center sm:p-0">
+                <div class="relative transform overflow-hidden rounded-lg bg-white text-left shadow-xl transition-all sm:my-8 sm:w-full sm:max-w-lg">
+                  <div class="bg-white px-4 pb-4 pt-5 sm:p-6 sm:pb-4">
+                    <div class="sm:flex sm:items-start">
+                      <div class="mx-auto flex h-12 w-12 flex-shrink-0 items-center justify-center rounded-full bg-red-100 sm:mx-0 sm:h-10 sm:w-10">
+                        <img src="./assets/coin.png" alt="">
+                      </div>
+                      <div class="mt-3 text-center sm:ml-4 sm:mt-0 sm:text-left">
+                        <h3 class="text-base font-semibold leading-6 text-gray-900" id="modal-title">Congratulation</h3>
+                        <div class="mt-2">
+                          <p class="text-sm text-gray-500">You have donated for HUman KInd</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="bg-gray-50 px-4 py-3 sm:flex sm:flex-row-reverse sm:px-6">
+                    <button type="button" class="mt-3 inline-flex w-full justify-center rounded-md bg-white px-3 py-2 text-sm font-semibold text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 hover:bg-gray-50 sm:mt-0 sm:w-auto" id="try-agn1">Donate MOre</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+
+
+<!-- card 222222222222222222222 -->
+<div class="relative z-10 hidden" aria-labelledby="modal-title" role="dialog" aria-modal="true" id="mod5" >
+    <div class="fixed inset-0 bg-gray-500 bg-opacity-75 transition-opacity" aria-hidden="true"></div>
+  
+    <div class="fixed inset-0 z-10 w-screen overflow-y-auto">
+      <div class="flex min-h-full items-end justify-center p-4 text-center sm:items-center sm:p-0">
+        <div class="relative transform overflow-hidden rounded-lg bg-white text-left shadow-xl transition-all sm:my-8 sm:w-full sm:max-w-lg">
+          <div class="bg-white px-4 pb-4 pt-5 sm:p-6 sm:pb-4">
+            <div class="sm:flex sm:items-start">
+              <div class="mx-auto flex h-12 w-12 flex-shrink-0 items-center justify-center rounded-full bg-red-100 sm:mx-0 sm:h-10 sm:w-10">
+                <svg class="h-6 w-6 text-red-600" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M12 9v3.75m-9.303 3.376c-.866 1.5.217 3.374 1.948 3.374h14.71c1.73 0 2.813-1.874 1.948-3.374L13.949 3.378c-.866-1.5-3.032-1.5-3.898 0L2.697 16.126zM12 15.75h.007v.008H12v-.008z" />
+                </svg>
+              </div>
+              <div class="mt-3 text-center sm:ml-4 sm:mt-0 sm:text-left">
+                <h3 class="text-base font-semibold leading-6 text-gray-900" id="modal-title">Donation Failed</h3>
+                <div class="mt-2">
+                  <p class="text-sm text-gray-500">Your Donating ammount is not correct.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="bg-gray-50 px-4 py-3 sm:flex sm:flex-row-reverse sm:px-6">
+            <button type="button" class="mt-3 inline-flex w-full justify-center rounded-md bg-white px-3 py-2 text-sm font-semibold text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 hover:bg-gray-50 sm:mt-0 sm:w-auto" id="try-agn5">Try again</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+
+<div class="relative z-10 hidden" aria-labelledby="modal-title" role="dialog" aria-modal="true" id="mod6" >
+    <div class="fixed inset-0 bg-gray-500 bg-opacity-75 transition-opacity" aria-hidden="true"></div>
+  
+    <div class="fixed inset-0 z-10 w-screen overflow-y-auto">
+      <div class="flex min-h-full items-end justify-center p-4 text-center sm:items-center sm:p-0">
+        <div class="relative transform overflow-hidden rounded-lg bg-white text-left shadow-xl transition-all sm:my-8 sm:w-full sm:max-w-lg">
+          <div class="bg-white px-4 pb-4 pt-5 sm:p-6 sm:pb-4">
+            <div class="sm:flex sm:items-start">
+              <div class="mx-auto flex h-12 w-12 flex-shrink-0 items-center justify-center rounded-full bg-red-100 sm:mx-0 sm:h-10 sm:w-10">
+                <img src="./assets/coin.png" alt="">
+              </div>
+              <div class="mt-3 text-center sm:ml-4 sm:mt-0 sm:text-left">
+                <h3 class="text-base font-semibold leading-6 text-gray-900" id="modal-title">Congratulation</h3>
+                <div class="mt-2">
+                  <p class="text-sm text-gray-500">You have donated for HUman KInd</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="bg-gray-50 px-4 py-3 sm:flex sm:flex-row-reverse sm:px-6">
+            <button type="button" class="mt-3 inline-flex w-full justify-center rounded-md bg-white px-3 py-2 text-sm font-semibold text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 hover:bg-gray-50 sm:mt-0 sm:w-auto" id="try-agn6">Donate MOre</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+<!-- card 3 333333333333333333 -->
+
+<div class="relative z-10 hidden" aria-labelledby="modal-title" role="dialog" aria-modal="true" id="mod8" >
+    <div class="fixed inset-0 bg-gray-500 bg-opacity-75 transition-opacity" aria-hidden="true"></div>
+  
+    <div class="fixed inset-0 z-10 w-screen overflow-y-auto">
+      <div class="flex min-h-full items-end justify-center p-4 text-center sm:items-center sm:p-0">
+        <div class="relative transform overflow-hidden rounded-lg bg-white text-left shadow-xl transition-all sm:my-8 sm:w-full sm:max-w-lg">
+          <div class="bg-white px-4 pb-4 pt-5 sm:p-6 sm:pb-4">
+            <div class="sm:flex sm:items-start">
+              <div class="mx-auto flex h-12 w-12 flex-shrink-0 items-center justify-center rounded-full bg-red-100 sm:mx-0 sm:h-10 sm:w-10">
+                <svg class="h-6 w-6 text-red-600" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M12 9v3.75m-9.303 3.376c-.866 1.5.217 3.374 1.948 3.374h14.71c1.73 0 2.813-1.874 1.948-3.374L13.949 3.378c-.866-1.5-3.032-1.5-3.898 0L2.697 16.126zM12 15.75h.007v.008H12v-.008z" />
+                </svg>
+              </div>
+              <div class="mt-3 text-center sm:ml-4 sm:mt-0 sm:text-left">
+                <h3 class="text-base font-semibold leading-6 text-gray-900" id="modal-title">Donation Failed</h3>
+                <div class="mt-2">
+                  <p class="text-sm text-gray-500">Your Donating ammount is not correct.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="bg-gray-50 px-4 py-3 sm:flex sm:flex-row-reverse sm:px-6">
+            <button type="button" class="mt-3 inline-flex w-full justify-center rounded-md bg-white px-3 py-2 text-sm font-semibold text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 hover:bg-gray-50 sm:mt-0 sm:w-auto" id="try-agn8">Try again</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+
+<div class="relative z-10 hidden" aria-labelledby="modal-title" role="dialog" aria-modal="true" id="mod9" >
+    <div class="fixed inset-0 bg-gray-500 bg-opacity-75 transition-opacity" aria-hidden="true"></div>
+  
+    <div class="fixed inset-0 z-10 w-screen overflow-y-auto">
+      <div class="flex min-h-full items-end justify-center p-4 text-center sm:items-center sm:p-0">
+        <div class="relative transform overflow-hidden rounded-lg bg-white text-left shadow-xl transition-all sm:my-8 sm:w-full sm:max-w-lg">
+          <div class="bg-white px-4 pb-4 pt-5 sm:p-6 sm:pb-4">
+            <div class="sm:flex sm:items-start">
+              <div class="mx-auto flex h-12 w-12 flex-shrink-0 items-center justify-center rounded-full bg-red-100 sm:mx-0 sm:h-10 sm:w-10">
+                <img src="./assets/coin.png" alt="">
+              </div>
+              <div class="mt-3 text-center sm:ml-4 sm:mt-0 sm:text-left">
+                <h3 class="text-base font-semibold leading-6 text-gray-900" id="modal-title">Congratulation</h3>
+                <div class="mt-2">
+                  <p class="text-sm text-gray-500">You have donated for HUman KInd</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="bg-gray-50 px-4 py-3 sm:flex sm:flex-row-reverse sm:px-6">
+            <button type="button" class="mt-3 inline-flex w-full justify-center rounded-md bg-white px-3 py-2 text-sm font-semibold text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 hover:bg-gray-50 sm:mt-0 sm:w-auto" id="try-agn9">Donate MOre</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+          
+    </main>
+    <script src="./functions.js"></script>
+    <script src="./index.js"></script>
+</body>
+</html>
