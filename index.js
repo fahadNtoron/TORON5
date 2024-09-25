@@ -117,17 +117,14 @@ document.getElementById('donateBtn8').addEventListener('click', function(){
         else{
             document.getElementById('old-donate').innerText = newValue;
             document.getElementById('donaded8').innerText = totalDonated;
-            const element = document.getElementById('mod6');
+            const element = document.getElementById('mod9');
             
             element.classList.remove("hidden");
+            const app = document.createElement("p");
             const date = new Date()
-            const app = document.createElement('div');
-            app.innerHTML = `<div class="text-2xl font-bold border-solid border-2px border-black bg-gray-200> ${inputedValueNUm} donateed for Noakhali at <br>${date}</div> 
-            `
+            app.innerText = `${inputedValueNUm} donateed for Feni at ${date}`;
             const bdy = document.getElementById('bdy')
-            const finap = document.getElementById('bdyCr')
-            const okkk = bdy.appendChild(app);
-            finap.appendChild(okkk);
+            bdy.appendChild(app);
 
 
         }
@@ -164,6 +161,7 @@ document.getElementById('donation').addEventListener('click', function(){
     const ok2 = document.getElementById('bdy')
     ok2.classList.add("hidden")
 })
+
 
 
 

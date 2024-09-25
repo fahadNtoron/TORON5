@@ -8,8 +8,8 @@
 <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body class="bg-white">
-    <div class=" backdrop-blur-3xl bg-yellow-200">
-        <nav class="flex justify-around p-5 backdrop:blur-2xl" >
+    <div class=" backdrop-blur-3xl bg-yellow-200 fixed z-10 backdrop-blur-3xl w-full top-0 left-0">
+        <nav class="flex justify-around p-5 backdrop:blur-2xl " >
             <a href="./blog.html"><button class="btn btn-secondary" id="go-to-blog">Blog</button></a>
             <div class="flex gap-3 items-center">
                 <div><img src="./assets/logo.png" alt=""></div>
@@ -22,7 +22,7 @@
         </nav>
     </div>
     <main class="m-4" >
-        <div class="flex gap-9 justify-center">
+        <div class="flex gap-9 justify-center mt-20 pt-24">
             <button class="btn btn-secondary hover:bg-green-400 " id="donation">Donation</button>
             <button class="btn btn-secondary hover:bg-green-400" id="hstry">History</button>
         </div>
