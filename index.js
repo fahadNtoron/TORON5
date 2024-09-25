@@ -157,13 +157,13 @@ document.getElementById('try-agn9').addEventListener('click', function(){
 document.getElementById('hstry').addEventListener('click', function(){
     const ok = document.getElementById('dntMain');
     ok.classList.add("hidden")
-    const ok2 = document.getElementById('bdy')
+    const ok2 = document.getElementById('card-container')
     ok2.classList.remove("hidden")
 })
 document.getElementById('donation').addEventListener('click', function(){
     const ok = document.getElementById('dntMain');
     ok.classList.remove("hidden")
-    const ok2 = document.getElementById('bdy')
+    const ok2 = document.getElementById('card-container')
     ok2.classList.add("hidden")
 })
 
