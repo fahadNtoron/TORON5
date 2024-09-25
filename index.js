@@ -173,5 +173,3 @@ document.getElementById('donation').addEventListener('click', function(){
 
 
 
-
-
