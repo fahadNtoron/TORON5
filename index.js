@@ -17,11 +17,13 @@ document.getElementById('donateBtn').addEventListener('click', function(){
             document.getElementById('donaded').innerText = totalDonated;
             const element = document.getElementById('mod1');
             element.classList.remove("hidden");
-            const app = document.createElement("p");
-            const date = new Date()
-            app.innerText = `${inputedValueNUm} donateed for Noakhali at ${date}`;
-            const bdy = document.getElementById('bdy')
-            bdy.appendChild(app);
+            const date = new Date();
+            const app1 = document.createElement("div");
+            app1.classList.add('bg-gray-300');
+            app1.innerHTML = `
+            <h4 class="text 2xl font bold m-7 rounded-md shadow-md py-5 text-black"> ${inputedValueNUm} BDT donateed for Noakhali at <br> ${date} </h4>
+            `
+            document.getElementById('card-container').appendChild(app1)
         }
         
         
@@ -70,11 +72,13 @@ document.getElementById('donateBtn5').addEventListener('click', function(){
             document.getElementById('donaded5').innerText = totalDonated;
             const element = document.getElementById('mod6');
             element.classList.remove("hidden");
-            const app = document.createElement("p");
-            const date = new Date()
-            app.innerText = `${inputedValueNUm} donateed for Feni at ${date}`;
-            const bdy = document.getElementById('bdy')
-            bdy.appendChild(app);
+            const date = new Date();
+            const app1 = document.createElement("div");
+            app1.classList.add('bg-gray-300');
+            app1.innerHTML = `
+            <h4 class="text 2xl font bold m-7 rounded-md shadow-md py-5 text-black"> ${inputedValueNUm} BDT donateed for Feni at <br> ${date} </h4>
+            `
+            document.getElementById('card-container').appendChild(app1)
         }
         
         
@@ -120,12 +124,13 @@ document.getElementById('donateBtn8').addEventListener('click', function(){
             const element = document.getElementById('mod9');
             
             element.classList.remove("hidden");
-            const app = document.createElement("p");
-            const date = new Date()
-            app.innerText = `${inputedValueNUm} donateed for Feni at ${date}`;
-            const bdy = document.getElementById('bdy')
-            bdy.appendChild(app);
-
+            const date = new Date();
+            const app1 = document.createElement("div");
+            app1.classList.add('bg-gray-300');
+            app1.innerHTML = `
+            <h4 class="text 2xl font bold m-7 rounded-md shadow-md py-5 text-black"> ${inputedValueNUm} BDT donateed for Noakhali at <br> ${date} </h4>
+            `
+            document.getElementById('card-container').appendChild(app1)
 
         }
         
